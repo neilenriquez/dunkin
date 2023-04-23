@@ -6,17 +6,8 @@ Version: 1.0
 Author: Neil
 Author URI: http://www.example.com/
 */
-/*
-Theme Name: Custom Theme
-Theme URI: http://www.example.com/
-Description: A custom WordPress theme
-Version: 1.0
-Author: Neil
-Author URI: http://www.example.com/
-*/
 
 /* BODY */
-
 body {
     position: relative;
     overflow-y: overlay;
@@ -24,277 +15,6 @@ body {
     font-size: 16px;
     scroll-behavior: smooth;
     margin: 0px;
-}
-
-.hero-container {
-    background-image: url("https://dev-api.dunkindonuts.ph/storage/uploads/Banner/2022-12-20/bg-image-1_15-45-42-626987.jpg"); /* The image used */
-    background-color: #cccccc;
-    height: 750px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 142px;
-}
-
-.hero-container .hero-container-row {
-    max-width: 1180px;
-    margin: auto;
-    padding-top: 40px;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    overflow: hidden;
-}
-
-.hero-container .hero-content, .hero-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-}
-
-.hero-container .hero-content {
-    flex: 0 0 500px;
-}
-
-.hero-container .hero-image {
-    flex: 1 0 5%;
-}
-
-.hero-container h1 {
-    font-weight:bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: 55px;
-    margin: 0;
-}
-
-.hero-container .hero-content-footer {
-    text-align: left;
-    width: 100%;
-}
-
-.hero-container p {
-    font-weight:bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: 18px;
-}
-
-.cards-container {
-    max-width: 1180px;
-    margin: auto;
-    margin-top: 10%;
-}
-
-.cards-container .cards-header {
-    text-align: center;
-    width: 100%;
-}
-
-.cards-container h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 50px;
-    margin: 0;
-}
-
-.cards-container p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #8f8f8f;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-.cards-container .cards-content {
-    width: 100%;
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.cards-container .cards-content .cards-content-body-container {
-    width: 31%;
-    position: relative;
-    display: flex;
-    border: 1px solid #f2f2f2;
-    border-radius: 24px;
-    box-shadow: 3px 46px 99px rgba(0,0,0,.051);
-    margin: 10px 10px;
-}
-
-.cards-container .cards-content .cards-content-body {
-    width: 100%;
-    padding: 30px;
-    background: white;
-}
-
-.cards-container .cards-content .cards-content-body .cards-content-img {
-    display: flex;
-    width: 100%;
-    justify-content: right;
-}
-
-.cards-container .cards-content .cards-content-body h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 45px;
-    margin: 0;
-}
-
-.cards-container .cards-content .cards-content-body h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 30px;
-    margin: 10px 0 15px;
-}
-
-.cards-container .cards-content .cards-content-body p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #8f8f8f;
-    font-size: 18px;
-    margin: 5px 0 10px;
-}
-
-.swiper-container {
-    max-width: 1180px;
-    margin: auto;
-    margin-top: 5%;
-}
-
-.swiper-container .swiper-header h1 {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 50px;
-    margin: 0;
-    margin-bottom: 5%;
-}
-.divider-container {
-    background-image: url("https://dev.dunkindonuts.ph/_ipx/f_webp,s_2560x900/placeholders/home/middle-banner.jpg");
-    background-color: #cccccc;
-    height: 450px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 50px;
-}
-
-.cards-container2 {
-    max-width: 1180px;
-    margin: auto;
-    margin-top: 3%;
-}
-
-.cards-container2 .cards-header2 {
-    text-align: center;
-    width: 100%;
-}
-
-.cards-container2 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 50px;
-    margin: 0;
-}
-
-.cards-container2 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #8f8f8f;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-.cards-container2 .cards-content2 {
-    width: 100%;
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.cards-container2 .cards-content2 .cards-content-body-container2 {
-    width: 31%;
-    position: relative;
-    display: flex;
-    border: 1px solid #f2f2f2;
-    border-radius: 24px;
-    box-shadow: 3px 46px 99px rgba(0,0,0,.051);
-    margin: 10px 10px;
-}
-
-.cards-container2 .cards-content2 .cards-content-body2 {
-    width: 100%;
-    padding: 30px;
-    background: white;
-}
-
-.cards-container2 .cards-content2 .cards-content-body2 .cards-content-img2 img{
-    display: flex;
-    width: 100%;
-    border-radius: 28px;
-}
-
-.cards-container2 .cards-content2 .cards-content-body2 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 45px;
-    margin: 0;
-}
-
-.cards-container2 .cards-content2 .cards-content-body2 h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 30px;
-    margin: 10px 0 15px;
-}
-
-.cards-container2 .cards-content2 .cards-content-body2 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #8f8f8f;
-    font-size: 18px;
-    margin: 5px 0 10px;
-}
-
-.alternate-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.alternate-container .alternate-content-body {
-    padding: 5%;
-    width: 40%;
-    align-content: center;
-    display: inline-grid;
-}
-
-.alternate-container .alternate-content-body2 {
-    padding: 2%;
-    width: 25%;
-    display: flex;
-    float: right;
-}
-
-.alternate-container .alternate-content-body picture {
-    border-radius: 28px;
-    width: -webkit-fill-available;
-}
-
-.alternate-container h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff6e0c;
-    font-size: 45px;
-    margin: 0;
-}
-
-.alternate-container p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #8f8f8f;
-    font-size: 18px;
-    margin: 5px 0 10px;
 }
 /* NAVIGATIONS */
 #navbar {
@@ -305,6 +25,7 @@ body {
     z-index: 101;
     box-shadow: 3px 6px 13px rgba(0,0,0,.059);
     transition: .3s ease;
+    top: 32px;
 }
 .sticky {
     position: fixed;
@@ -331,7 +52,7 @@ body {
 .socials {
     margin-left: 2%;
 }
-.header-contacts {
+.header_contacts {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -376,7 +97,7 @@ body {
     transition: 0.3s ease 0.3s;
     background-color: white;
     text-align: center;
-    margin-right: 5px;
+    margin-left: 5px;
 }
 .general_button:hover {
     background-color:#FF6E0E;
@@ -418,10 +139,6 @@ a {
     width: 100%;
     display: block;
 }
-.nav-links {
-    display: flex;
-    width: 100%;
-}
 .navigation_refs {
     display: flex;
     justify-content: flex-end;
@@ -430,12 +147,11 @@ a {
     flex: 1 0 5%;
 }
 .navigation_ref_item {
-    margin-right: 5%;
-    margin-top: 1.1%;
+    margin-left: 5%;
 }
 .ref_item_link {
     color: gray;
-    font-size: 18px;
+    font-size: 15px;
     font-weight:800;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -453,7 +169,6 @@ a {
 .h1_nav {
     display:flex;
     font-weight: 800;
-    margin-left: 3%;
 }
 .pink_highlight {
     color:#f20c90;
@@ -523,7 +238,7 @@ a {
     width: 100%;
     margin: 0 auto;
 }
-.cards-h1 {
+.cards_h1 {
     padding: 0px;
     color: #FF6E0E;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -606,12 +321,10 @@ a {
 }
 /* SWIPER */
 .swiper {
-    max-width: 1100px;
-    margin: auto;
+    width: 1100px;
     height: 480px;
     border-radius: 20px;
     padding-bottom: 60px;
-    width: 100%;
 }
 .swipe_subhead {
     padding: 0px;
@@ -643,9 +356,7 @@ a {
     text-align: left;
 }
 .swipe_container {
-    display: flex;
-    height: 100%;
-    width: 100%;
+    display:flex;
 }
 .swipe_left_container {
     position: flex;
@@ -661,11 +372,15 @@ a {
     text-align: center;
     width: 450px;
     z-index: 2;
+    align-self: center;
+    flex: 1 0 5%;
+    padding: 20px 60px 20px 40px;
+    width: fit-content;
     display: flex;
 }
 .swipe_image {
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    height: 450px;
     vertical-align: middle;
 }
 .swiper-pagination-bullet {
@@ -696,7 +411,7 @@ a {
 }
 .floating_window {
     padding: 40px 0 60px;
-    max-width: 1100px;
+    width: 1100px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -822,9 +537,8 @@ a {
     margin: 0 auto;
     display: block;
     padding: 40px 0 50px;
-    margin: 10px 10px;
 }
-.article-main {
+.article_main {
     display: block;
     width: 100%;
     max-width: calc(100% - 80px);
@@ -904,7 +618,7 @@ a {
 .article_description:hover {
     color: #FF6E0E;
 }
-.article-header{
+.article_header{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -924,7 +638,7 @@ a {
     cursor: pointer;
     transition: .3s ease;
 }
-.article-header {
+.article_header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -932,7 +646,7 @@ a {
     width: 100%;
     margin: 0 auto;
 }
-.article-main {
+.article_main {
     display: block;
     width: 100%;
 }

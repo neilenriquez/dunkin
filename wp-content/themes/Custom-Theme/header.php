@@ -15,11 +15,11 @@
         <div class="header_div">
             <div class="header_buttons">
                 <div class="socials">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-youtube"></a>
-                    <a href="#" class="fa fa-vine"></a>
+                    <a href="#" class="fa fa-facebook socials_link"></a>
+                    <a href="#" class="fa fa-twitter socials_link"></a>
+                    <a href="#" class="fa fa-instagram socials_link"></a>
+                    <a href="#" class="fa fa-youtube socials_link"></a>
+                    <a href="#" class="fa fa-vine socials_link"></a>
                 </div>
                 <div class="header_contacts">
                     <a href="/" class="general_button transparent_button">Contact Us</a>
@@ -29,27 +29,29 @@
         </div>
         <div class="header_nav">
             <div class="nav_content">
-            <h1 class="h1_nav">DUNKIN</h1><h1 class="h1_nav pink_highlight">'</h1>
-            <ul class="navigation_refs">
-                <li class="navigation_ref_item">
-                    <a href="" class="ref_item_link"> Menu</a>
-                </li>
-                <li class="navigation_ref_item">
-                    <a href="" class="ref_item_link">About Us</a>
-                </li>
-                <li class="navigation_ref_item">
-                    <a href="" class="ref_item_link">Sustainability</a>
-                </li>
-                <li class="navigation_ref_item">
-                    <a href="" class="ref_item_link">Franchise</a>
-                </li>
-                <li class="navigation_ref_item">
-                    <a href="" class="ref_item_link">Careers</a>
-                </li>
-                <li class="navigation_ref_item">
-                    <a href="" class="ref_item_link">Media</a>
-                </li>
-            </ul>
+                <div class="nav-links">
+                    <h1 class="h1_nav">DUNKIN</h1><h1 class="h1_nav pink_highlight">'</h1>
+                    <ul class="navigation_refs">
+                        <li class="navigation_ref_item">
+                            <a href="" class="ref_item_link"> Menu</a>
+                        </li>
+                        <li class="navigation_ref_item">
+                            <a href="" class="ref_item_link">About Us</a>
+                        </li>
+                        <li class="navigation_ref_item">
+                            <a href="" class="ref_item_link">Sustainability</a>
+                        </li>
+                        <li class="navigation_ref_item">
+                            <a href="" class="ref_item_link">Franchise</a>
+                        </li>
+                        <li class="navigation_ref_item">
+                            <a href="" class="ref_item_link">Careers</a>
+                        </li>
+                        <li class="navigation_ref_item">
+                            <a href="" class="ref_item_link">Media</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
