@@ -36,7 +36,7 @@
                             <a href="" class="ref_item_link"> Menu</a>
                         </li>
                         <li class="navigation_ref_item">
-                            <a href="" class="ref_item_link">About Us</a>
+                            <a href="/about-us" class="ref_item_link">About Us</a>
                         </li>
                         <li class="navigation_ref_item">
                             <a href="" class="ref_item_link">Sustainability</a>

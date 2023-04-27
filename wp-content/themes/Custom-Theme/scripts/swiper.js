@@ -14,3 +14,15 @@ navigation: {
     prevEl: '.swiper-button-prev',
 },
 });
+
+var filled_swiper = new Swiper(".filled-swiper", {
+    loopPreventsSliding: true,
+    slidesPerView: 5,
+    centeredSlides: true,
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+  });
