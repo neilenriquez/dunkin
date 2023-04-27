@@ -273,50 +273,9 @@
         </div>
     </div>
 </section>
-<div class="bottom-container">
-    <div class="bottom-header">
-        <h1 class="">KEEP DUNKIN'</h1>
-        <div class="bottom-header-content">
-            <a href="#" class="fa fa-instagram socials_link"><p>@dunkin_ph </p></a>
-        </div>
-    </div>
-    <div class="filled-swiper">
-        <div class="filled-swiper-button-container">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-color:#FF6E0E" href="">
-               <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-2.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#49cdd5">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-3.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#FF6E0E">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-4.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#f20c90">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-5.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#49cdd5">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-1.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#FF6E0E">
-               <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-2.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#49cdd5">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-3.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#FF6E0E">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-4.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#f20c90">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-5.jpg" alt="" class="swiper-image">
-            </div>
-            <div class="swiper-slide" style="background-color:#49cdd5">
-                <img src="https://dev.dunkindonuts.ph/_ipx/s_512x512/placeholders/ig/ig-1.jpg" alt="" class="swiper-image">
-            </div>
-        </div>
-    </div>
+<div class="bottom_header">
+    <h1 class="">KEEP DUNKIN'</h1>
+    <h2 class=""> <a href="#" class="fa fa-instagram socials_link"> @dunkin_ph</a></h2>
 </div>
+
 <?php get_footer(); ?>

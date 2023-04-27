@@ -21,13 +21,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'dunkin' );
+define( 'DB_NAME', 'wp_Dunkin_db' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'wp_Dunkin_user' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'wp_Dunkin_pw' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
