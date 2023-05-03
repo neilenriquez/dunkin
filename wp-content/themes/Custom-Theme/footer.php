@@ -1,6 +1,11 @@
 <?php wp_footer(); ?>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <div class= "footer-container">
+    <div class="footer-back-to-top-container">
+        <p class="">BACK TO TOP
+            <span class="back-to-top-button">></span>
+        </p>
+    </div>
     <div class="footer-content">
         <div class="footer-logo">
             <img src="https://dev.dunkindonuts.ph/_ipx/s_200x200/logo-circle.svg" alt="" class="">
@@ -19,36 +24,24 @@
         <div class="footer-links">
             <h1 class="">QUICKLINKS</h1>
             <ul class="">
-                <a href="" class="">
-                        <li class="">Menu</li>
-                </a>
-                <a href="" class="">
-                        <li class="">About Us</li>
-                </a>
-                <a href="" class="">
-                        <li class="">Sustainability</li>
-                </a>
-                <a href="" class="">
-                        <li class="">Franchise</li>
-                </a>
-                <a href="" class="">
-                        <li class="">Careers</li>
-                </a>
-                <a href="" class="">
-                        <li class="">Media</li>
-                </a>
-                <a href="" class="">
-                        <li class="">Contact Us</li>
-                </a>
+                <li class=""> <a href="" class="">Menu</a></li>
+                <li class=""> <a href="" class="">About Us</a></li>
+                <li class="">  <a href="" class="">Sustainability</a></li>
+                <li class="">  <a href="" class="">Franchise</a></li>
+                <li class="">  <a href="" class="">Careers</a></li>
+                <li class="">  <a href="" class="">Media</a></li>
+                <li class="">  <a href="" class="">Contact Us </a></li>
             </ul>
         </div>
     </div>
-    <div class="footer-bottom-links">
-        <p class="">@ 2022. All Rights Reserved</p>
-        <ul class="">
-            <li class="">Sitemap</li>
-            <li class="">Privacy Policy</li>
-        </ul>
+    <div class="footer-content-bottom">
+        <div class="footer-bottom-links">
+            <p class="">@ 2022. All Rights Reserved</p>
+            <ul class="">
+                <li class="">Sitemap</li>
+                <li class="">Privacy Policy</li>
+            </ul>
+        </div>
     </div>
 </div>
 </body>

@@ -217,7 +217,7 @@
             <button class="general_button blue_button2">EXPLORE MENU</button>
     </div>
 </div>
-<section class="article " style="background-color: rgb(245, 245, 245);">
+<section class="article-container" style="background-color: rgb(245, 245, 245);">
         <div class="article_main">
             <div class="article_header">
                 <h1 class="cards_h1">FEATURED ARTICLES</h1>
