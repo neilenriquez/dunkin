@@ -23,24 +23,38 @@
         </div>
         <div class="footer-links">
             <h1 class="">QUICKLINKS</h1>
-            <ul class="">
-                <li class=""> <a href="" class="">Menu</a></li>
-                <li class=""> <a href="" class="">About Us</a></li>
-                <li class="">  <a href="" class="">Sustainability</a></li>
-                <li class="">  <a href="" class="">Franchise</a></li>
-                <li class="">  <a href="" class="">Careers</a></li>
-                <li class="">  <a href="" class="">Media</a></li>
-                <li class="">  <a href="" class="">Contact Us </a></li>
-            </ul>
+            <?php
+                wp_nav_menu(array(
+                    'menu'          => 3,
+                    'menu_class'     => 'menu', // CSS class for the menu container
+                    'container'      => 'nav', // HTML element to wrap the menu in (nav, div, etc.)
+                ));
+            ?>
+            <!-- <ul class="">
+                <li class=""> <a href="menu" class="">Menu</a></li>
+                <li class=""> <a href="about-us" class="">About Us</a></li>
+                <li class="">  <a href="sustainability" class="">Sustainability</a></li>
+                <li class="">  <a href="franchise" class="">Franchise</a></li>
+                <li class="">  <a href="careers" class="">Careers</a></li>
+                <li class="">  <a href="media" class="">Media</a></li>
+                <li class="">  <a href="contact-us" class="">Contact Us </a></li>
+            </ul> -->
         </div>
     </div>
     <div class="footer-content-bottom">
         <div class="footer-bottom-links">
             <p class="">@ 2022. All Rights Reserved</p>
-            <ul class="">
-                <li class="">Sitemap</li>
-                <li class="">Privacy Policy</li>
-            </ul>
+            <?php
+                wp_nav_menu(array(
+                    'menu'          => 4,
+                    'menu_class'     => 'menu', // CSS class for the menu container
+                    'container'      => 'nav', // HTML element to wrap the menu in (nav, div, etc.)
+                ));
+            ?>
+            <!-- <ul class="">
+                <li class=""> <a href="site-map">Sitemap</a></li>
+                <li class=""> <a href="privacy-policy">Privacy Policy</a></li>
+            </ul> -->
         </div>
     </div>
 </div>

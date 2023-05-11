@@ -34,7 +34,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 90px;
-    padding-bottom: 0%;
+    padding-bottom: 12%;
 }
 
 .hero-container .hero-container-row {
@@ -53,14 +53,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    flex: 1 0 5%;
+    width: 100%;
 }
 
 .hero-container .hero-content {
     flex: 0 0 500px;
-}
-
-.hero-container .hero-image {
-    flex: 1 0 5%;
 }
 
 .hero-container h1 {
@@ -74,7 +72,7 @@ body {
 .hero-container-footer {
     text-align: left;
     width: 100%;
-    margin-top: -10px;
+    margin-top: 0%;
     position: absolute;
 }
 
@@ -232,12 +230,14 @@ body {
     width: 100%;
     padding: 30px;
     background: white;
+    border-radius: 28px;
 }
 
 .cards-container2 .cards-content2 .cards-content-body2 .cards-content-img2 img{
     display: flex;
     width: 100%;
     border-radius: 28px;
+    height: auto;
 }
 
 .cards-container2 .cards-content2 .cards-content-body2 h1 {
@@ -250,7 +250,7 @@ body {
 .cards-container2 .cards-content2 .cards-content-body2 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ff6e0c;
-    font-size: 30px;
+    font-size: 25px;
     margin: 10px 0 15px;
 }
 
@@ -1187,4 +1187,59 @@ a {
 .article-main {
     display: block;
     width: 100%;
+}
+
+.footer-bottom-links li a {
+    color: white;
+}
+
+.footer-bottom-links li a:hover {
+    color: #49cdd5;
+    transition: .3s ease;
+}
+
+.about-us-hero-container {
+    background-image: url(https://dev-api.dunkindonuts.ph/storage/uploads/Banner/2022-12-20/bg-image-1_15-45-42-626987.jpg);
+    background-color: #cccccc;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 111px;
+    padding-bottom: 0%;
+}
+
+.menu-top-bar-container {
+    text-align: -webkit-right;
+    width: 100%;
+}
+
+.menu-top-bar-container ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style: none;
+    flex: 1 0 5%;
+    margin-right: 5%;
+    margin-top: 29px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.menu-top-bar-container ul li a {
+    color: gray;
+}
+
+.menu-top-bar-container ul li a:hover {
+    color: #FF6E0E;
+    transition: .3s ease;
+}
+
+.hero-image-file {
+    width: 100%;
+    height: auto;
 }

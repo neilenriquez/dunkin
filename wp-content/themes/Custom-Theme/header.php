@@ -31,27 +31,34 @@
             <div class="nav_content">
                 <div class="nav-links">
                     <h1 class="h1_nav">DUNKIN</h1><h1 class="h1_nav pink_highlight">'</h1>
-                    <ul class="navigation_refs">
+                    <?php
+                        wp_nav_menu(array(
+                            'menu'          => 2,
+                            'menu_class'     => 'menu', // CSS class for the menu container
+                            'container'      => 'nav', // HTML element to wrap the menu in (nav, div, etc.)
+                        ));
+                    ?>
+                    <!-- <ul class="navigation_refs">
                         <li class="navigation_ref_item">
-                            <a href="" class="ref_item_link"> Menu</a>
+                            <a href="menu" class="ref_item_link"> Menu</a>
                         </li>
                         <li class="navigation_ref_item">
-                            <a href="/about-us" class="ref_item_link">About Us</a>
+                            <a href="about-us" class="ref_item_link">About Us</a>
                         </li>
                         <li class="navigation_ref_item">
-                            <a href="" class="ref_item_link">Sustainability</a>
+                            <a href="sustainability" class="ref_item_link">Sustainability</a>
                         </li>
                         <li class="navigation_ref_item">
-                            <a href="" class="ref_item_link">Franchise</a>
+                            <a href="franchise" class="ref_item_link">Franchise</a>
                         </li>
                         <li class="navigation_ref_item">
-                            <a href="" class="ref_item_link">Careers</a>
+                            <a href="careers" class="ref_item_link">Careers</a>
                         </li>
                         <li class="navigation_ref_item">
-                            <a href="" class="ref_item_link">Media</a>
+                            <a href="archive" class="ref_item_link">Media</a>
                         </li>
-                    </ul>
-                </div>
+                    </ul> -->
             </div>
         </div>
     </div>
+</div>
