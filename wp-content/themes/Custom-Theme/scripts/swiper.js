@@ -18,7 +18,7 @@ navigation: {
 var filled_swiper = new Swiper(".filled-swiper", {
     loopPreventsSliding: true,
     watchOverflow: true,
-    slidesPerView: 5,
+    slidesPerView: 10,
     centeredSlides: true,
     loop: true,
 
