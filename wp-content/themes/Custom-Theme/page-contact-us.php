@@ -6,13 +6,47 @@
  */
 ?>
 <?php
+/*
+** Template Name: Add Post From Frontend
+*/
+?>
+<?php
     $contact_us_header_args = array(
         'post_type' => 'contact-us-header',
         'post_per_page' => '1',
     );
     $contact_us_header_query = new WP_Query ( $contact_us_header_args );
-    $first_name = $last_name = $email = $comment = $website = $inquiry_type = $contact_number = "";
+    $first_name = $last_name = $email = $comment = $inquiry_type = $contact_number = "";
     get_header(); 
+?>
+<script>
+    do_action( "save_post_{$inquiry-form->post_type}", int $post_id, WP_Post $post, bool $update );
+</script>
+<?php
+    if(isset($_POST))
+    {
+        $inquiry_select = $_POST['inquiry_select'];
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $email = $_POST['email'];
+        $contact_number = $_POST['contact_number'];
+        $comment = $_POST['comment'];
+        $new_post = array(
+            'post_title' => 'Inquiry',
+            'post_type' => 'inquiry-form',
+            'post_status' => 'publish',
+        );
+        $post_id = wp_insert_post( $new_post );
+        update_field( 'inquiry_type', $inquiry_select, $post_id );
+        update_field( 'first_name', $first_name, $post_id );
+        update_field( 'last_name', $last_name, $post_id );
+        update_field( 'email', $email, $post_id );
+        update_field( 'contact_number', $contact_number, $post_id );
+        update_field( 'comment', $comment, $post_id );
+    }
+    else {
+        return;
+    }
 ?>
 <div class="contact">
     <section class="contact-hero">
@@ -58,40 +92,40 @@
                     </ul>
                 </div>
                 <div class="contact-info-container-content-right">
-                    <form method="post" action="">  
+                    <form method="post" name="form" enctype="multipart/form-data">  
                         <div class="contact-info-container-content-right-text-solo">
                             <div class="contact-info-container-content-right-text-row">
                                 Inquiry:<br>
-                                <select name="formInquiry">
-                                    <option value="">Select an Inquiry</option>
-                                    <option value="<?php echo $inquiry_type;?>" name="inquiry_type">General Inquiry</option>
+                                <select name="inquiry_select">
+                                    <option value="" name="inquiry_type">Select an Inquiry</option>
+                                    <option value="General Inquiry" name="inquiry_type">General Inquiry</option>
                                 </select>
                             </div>
                         </div>
                         <div class="contact-info-container-content-right-text">
                             <div class="contact-info-container-content-right-text-row">
                                 <label> First Name: </label><br>
-                                <input type="text" name="first_name" value="<?php echo $first_name;?>">
+                                <input type="text" name="first_name">
                             </div>
                             <div class="contact-info-container-content-right-text-row">
                                 <label> Last Name: </label> <br>
-                                <input type="text" name="last_name" value="<?php echo $first_name;?>">
+                                <input type="text" name="last_name">
                             </div>
                         </div>
                         <div class="contact-info-container-content-right-text">
                             <div class="contact-info-container-content-right-text-row">
                                 <label> E-mail: </label> <br>
-                                <input type="text" name="email" value="<?php echo $email;?>">
+                                <input type="text" name="email">
                             </div>
                             <div class="contact-info-container-content-right-text-row">
                                 <label> Contact Number: </label><br>
-                                <input type="number" name="contact_number" value="<?php echo $contact_number;?>">
+                                <input type="number" name="contact_number">
                             </div>
                         </div>
                         <div class="contact-info-container-content-right-text-solo">
                             <div class="contact-info-container-content-right-text-row">
                                 <label> Comment: </label> <br>
-                                <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+                                <textarea name="comment" rows="5" cols="40"></textarea>
                                 <br><br>
                             </div>
                         </div>
@@ -109,27 +143,15 @@
                             <input type="submit" name="submit" value="Submit" class="general_button blue_button">
                         </div>
                     </form>
-
-                    <?php
-                        echo "<h2>Your Input:</h2>";
-                        echo $inquiry_type;
-                        echo "<br>";
-                        echo $first_name;
-                        echo "<br>";
-                        echo $last_name;
-                        echo "<br>";
-                        echo $email;
-                        echo "<br>";
-                        echo $contact_number;
-                        echo "<br>";
-                        echo $comment;
-                        echo "<br>";
-                    ?>
+                    
                 </div>
             </div>
         </div>
     </section>
 </div>
+<script>
+    
+</script>
 <style>
     .contact {
         margin-top: 110px;
