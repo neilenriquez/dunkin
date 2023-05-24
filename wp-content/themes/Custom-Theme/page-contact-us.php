@@ -19,8 +19,8 @@
     $first_name = $last_name = $email = $comment = $inquiry_type = $contact_number = "";
     get_header(); 
 ?>
+
 <script>
-    do_action( "save_post_{$inquiry-form->post_type}", int $post_id, WP_Post $post, bool $update );
 </script>
 <?php
     if(isset($_POST))
@@ -43,6 +43,14 @@
         update_field( 'email', $email, $post_id );
         update_field( 'contact_number', $contact_number, $post_id );
         update_field( 'comment', $comment, $post_id );
+        
+        $to = 'neilianenriquez.dbmanila@gmail.com';
+        $subject = 'Dunkin Inquiry';
+        $message = $comment;
+        $headers[] = 'From: ';
+        $headers[] = 'Reply-To: Neil Enriquez';
+        $headers[] = 'Content-Type: text/html: charset=UTF-8'; 
+        wp_mail($to, $subject, $message, $headers);
     }
     else {
         return;
@@ -141,6 +149,7 @@
                         </div>
                         <div class="contact-info-container-content-button">
                             <input type="submit" name="submit" value="Submit" class="general_button blue_button">
+                            <input type="button" name="submit" value="Submit" class="general_button blue_button">
                         </div>
                     </form>
                     
