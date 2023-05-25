@@ -28,7 +28,7 @@ body {
 
 .hero-container {
     background-image: url("https://dev-api.dunkindonuts.ph/storage/uploads/Banner/2022-12-20/bg-image-1_15-45-42-626987.jpg"); /* The image used */
-    background-color: #cccccc;
+    background-color: #f20c90;
     height: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,6 +70,7 @@ body {
 }
 
 .hero-container-footer {
+    background-color: #f20c90;
     text-align: left;
     width: 100%;
     margin-top: 0%;
@@ -1091,52 +1092,89 @@ a {
     margin-bottom: 20px;
     padding: 60px 0 50px;
 }
-.article {
+
+.article-container {
+    display: flex;
+    width: 100%;
     margin: 0 auto;
     display: block;
     padding: 40px 0 50px;
     margin: 10px 10px;
 }
-.article-container .article-img {
-    border-radius: 28px;
-    overflow: hidden;
-}
 .article-container .article-content {
     display: flex;
     width: 100%;
     margin-top: 20px;
-    place-content: center;
+    max-width: calc(100% - 80px);
+    margin: 0 0;
 }
-.article-container {
-    display: flex;
-    width: 100%;
-}
-.article-main {
+.article-container .article_main {
     display: block;
     width: 100%;
     max-width: calc(100% - 80px);
-    margin: 0 auto;
 }
-.articles {
-    margin: 0 20px;
+.article-container .article_main .article_header {
+    margin: 0 auto;
+    display: flex!important;
+    margin: 0 20px!important;
+    align-items: center;
+    width: 100%;
+}
+.article-container .article_main .article_header .article-h1 {
+    padding: 0px;
+    color: #FF6E0E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--theme_white);
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.article-container .article_main .article_header .blue_button2 {
+    position: absolute;
+    right: 5%;
+}
+.article-container .article-content {
+    justify-content: space-evenly;
+}
+.article-container .article-content .articles {
     position: relative;
     display: flex;
     flex-flow: row wrap;
+    height: auto;
     width: 20%;
 }
-.article_item {
-    display: flex;
+.article-container .article-content .articles .article_item {
+    display: grid;
     flex-flow: column;
     align-items: flex-start;
     flex: 0 0 100%;
     border-bottom: 1px solid hsla(0,0%,85.1%,.5);
     padding-bottom: 20px;
-    height: 100%;
+    margin: 5px;
+}
+.article-container .article-content .articles .article_item .article-text {
+    display: block;
+    width: 100%;
+}
+.article-container .article-content .articles .article_item .article-img {
+    border-radius: 28px;
+    overflow: hidden;
+    width: fit-content;
+    height: auto;
+}
+
+.article-container .article-content .articles .article_item .article-img img {
+    border-radius: 28px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
 }
 .article_item_link {
     flex: 1 0 5%;
     text-decoration: none;
-    width: 80%;
+    width: 100%;
+    display: block;
 }
 .article_category {
     background-color: #f20c90;
@@ -1273,3 +1311,56 @@ a {
     height: auto;
 }
 
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .hero-container .hero-container-row {
+        width: 95%;
+        display: flex;
+        margin: 0 5%;
+        padding-top: 60px;
+    }
+    .hero-container .hero-content, .hero-image {
+    }
+    .hero-container .hero-container-row .hero-image {
+        display: flex;
+        width: 100%;
+    }
+    .hero-container .hero-container-row .hero-image img {
+        width: 80%;
+        height: auto;
+    }
+    .hero-container h1 {
+        font-size: 35px;
+    }
+    .hero-container-footer {
+        top: -1px;
+    }
+    
+    .article-container .article_main .article_header .article-h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .article-container .article_main .article_header .blue_button2 {
+        position: absolute;
+        right: 5%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+    
+}
+
+@media only screen and (max-width: 425px) and (min-width: 280px) {
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 280px) {
+
+}
+
+  

@@ -46,11 +46,14 @@
         
         $to = 'neilianenriquez.dbmanila@gmail.com';
         $subject = 'Dunkin Inquiry';
-        $message = $comment;
+        $message = $comment; //comment from the form
         $headers[] = 'From: ';
         $headers[] = 'Reply-To: Neil Enriquez';
         $headers[] = 'Content-Type: text/html: charset=UTF-8'; 
-        wp_mail($to, $subject, $message, $headers);
+        echo $to;
+        echo $subject;
+        echo $message;
+        wp_mail( $to, $subject, $message, $headers );
     }
     else {
         return;
@@ -113,27 +116,27 @@
                         <div class="contact-info-container-content-right-text">
                             <div class="contact-info-container-content-right-text-row">
                                 <label> First Name: </label><br>
-                                <input type="text" name="first_name">
+                                <input type="text" name="first_name" value="">
                             </div>
                             <div class="contact-info-container-content-right-text-row">
                                 <label> Last Name: </label> <br>
-                                <input type="text" name="last_name">
+                                <input type="text" name="last_name" value="">
                             </div>
                         </div>
                         <div class="contact-info-container-content-right-text">
                             <div class="contact-info-container-content-right-text-row">
                                 <label> E-mail: </label> <br>
-                                <input type="text" name="email">
+                                <input type="text" name="email" value="">
                             </div>
                             <div class="contact-info-container-content-right-text-row">
                                 <label> Contact Number: </label><br>
-                                <input type="number" name="contact_number">
+                                <input type="number" name="contact_number" value="">
                             </div>
                         </div>
                         <div class="contact-info-container-content-right-text-solo">
                             <div class="contact-info-container-content-right-text-row">
                                 <label> Comment: </label> <br>
-                                <textarea name="comment" rows="5" cols="40"></textarea>
+                                <textarea name="comment" rows="5" cols="40" value=""></textarea>
                                 <br><br>
                             </div>
                         </div>
@@ -149,7 +152,6 @@
                         </div>
                         <div class="contact-info-container-content-button">
                             <input type="submit" name="submit" value="Submit" class="general_button blue_button">
-                            <input type="button" name="submit" value="Submit" class="general_button blue_button">
                         </div>
                     </form>
                     

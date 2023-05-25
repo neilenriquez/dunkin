@@ -22,7 +22,7 @@
                     <a href="#" class="fa fa-vine socials_link"></a>
                 </div>
                 <div class="header_contacts">
-                    <a href="/" class="general_button transparent_button">Contact Us</a>
+                    <a href="/dunkin/contact-us" class="general_button transparent_button">Contact Us</a>
                     <button class="general_button">Chat With Us</button>
                 </div>
             </div>
