@@ -83,7 +83,7 @@
                         }
                         $value = get_field( "image", false, false );
                         if( $value ) {
-                            echo '<div class="hero-image><img class="hero-image-file">' . wp_get_attachment_image( $value, array(600, 600) ) . '</img></div>';
+                            echo '<div class="hero-image"><img class="hero-image-file">' . wp_get_attachment_image( $value, array(600, 600) ) . '</img></div>';
                         } else {
                             echo 'empty'; 
                         } 
@@ -105,7 +105,7 @@
         </div>
     </div>
     <div class="hero-container-footer">
-            <img src="https://dev-api.dunkindonuts.ph/storage/uploads/Banner/2022-12-20/bg-drip-1_15-45-44-181169.png" width="100%" alt="test" loading="lazy" title="test">
+            <img src="https://dev-api.dunkindonuts.ph/storage/uploads/Banner/2022-12-20/bg-drip-1_15-45-44-181169.png" width="100%" loading="lazy" >
         </div>
     <div class="cards-container">
         <?php if ( $story_title_query->have_posts() ) : $story_title_query->the_post(); ?>
@@ -537,7 +537,7 @@
     <section class="article-container" style="background-color: rgb(245, 245, 245);">
         <div class="article_main">
             <div class="article_header">
-                <h1 class="cards-h1">FEATURED ARTICLES</h1>
+                <h1 class="article-h1">FEATURED ARTICLES</h1>
                 <button class="general_button blue_button2">VIEW MORE</button>
             </div>
             <div class="article-content">
@@ -548,7 +548,7 @@
                                 <?php
                                     $value = get_field( "image", false, false );
                                         if( $value ) {
-                                            echo '<picture class="article-img">' . wp_get_attachment_image( $value, array(280, 280) ) . '</picture> ';
+                                            echo '<div class="article-img">' . wp_get_attachment_image( $value, array(300, 300) ) . '</div> ';
                                         } else {
                                             echo 'empty'; 
                                         } 
@@ -560,13 +560,13 @@
                                         }
                                     $value = get_field( "content" );
                                         if( $value ) {
-                                            echo ' <a href="/" class="article_item_link"><p class="article_description">' . $value . '</p>';
+                                            echo ' <div class="article-text"><a href="/" class="article_item_link"><p class="article_description">' . $value . '</p>';
                                         } else {
                                             echo 'empty'; 
                                         }
                                     $value = get_field( "date" );
                                         if( $value ) {
-                                            echo '<p class="article_date">' . $value . '</p></a>';
+                                            echo '<p class="article_date">' . $value . '</p></a></div>';
                                         } else {
                                             echo 'empty'; 
                                         }
